@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>D3: Chain syntax</title>
+    <script type="text/javascript" src="js/d3.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+    // add paragraph to the body
+    let body = d3.select("body")
+        .append("p")
+        .text("New paragraph!");
+
+    // add header to the page
+    body.append("h1")
+        .text("Header");
+
+    // add another header to the page
+    body.append("h3")
+        .text("Another header");
+</script>
+</body>
+</html>
