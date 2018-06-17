@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>D3: SVG</title>
+    <script type="text/javascript" src="../js/d3.js"></script>
+</head>
+
+<body>
+
+
+    <script type="text/javascript">
+
+        var svg = d3.select('body')
+            .append('svg')
+            .attr('width', 400)
+            .attr('height', 150);
+
+        svg.append('circle')
+            .attr('cx', 100)
+            .attr('cy', 50)
+            .attr('r', 25)
+            .attr('fill', 'green');
+
+        svg.append('circle')
+            .attr('cx', 300)
+            .attr('cy', 50)
+            .attr('r', 25)
+            .attr('fill', 'green');
+
+        svg.append('circle')
+            .attr('cx', 200)
+            .attr('cy', 100)
+            .attr('r', 40)
+            .attr('fill', 'red');
+
+
+    </script>
+</body>
+
+</html>
